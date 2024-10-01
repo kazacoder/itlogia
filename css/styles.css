@@ -1,0 +1,20 @@
+p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 10px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    color: #112233;
+    text-shadow: 6px -8px 4px #000;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    background: blue;
+    background-image: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
