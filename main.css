@@ -1,0 +1,39 @@
+html    {
+    font-size: 21px;
+}
+
+
+.bordered {
+    border-collapse: collapse;
+}
+
+.bordered td {
+    border: 1px solid;
+    padding: 2px 20px;
+    text-align: center;
+}
+
+.bordered thead {
+    text-align: center;
+    background-color: #dadada;
+}
+
+h1  {
+    color: red;
+    background: yellow;
+    font-size: 20px;
+    width: fit-content;
+    border: 10px solid red;
+}
+/* Комментарий */
+div {
+    width: 300px;
+    background: yellow;
+    border: 5px solid red;
+    height: 300px;
+}
+
+p {
+    font-size: 16px;
+    background: aqua;
+}
