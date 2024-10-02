@@ -10,11 +10,30 @@ p {
     text-shadow: 6px -8px 4px #000;
 }
 
-div {
+.custom {
     width: 500px;
     height: 500px;
-    background: blue;
-    background-image: url("../images/background.jpeg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    /*background: blue;*/
+    /*background-image: url("../images/background.jpeg");*/
+    /*background-repeat: no-repeat;*/
+    /*!*background-size: contain;*!*/
+    /*background-position: center;*/
+    background: linear-gradient(90deg, black, orange);
+}
+
+h3 {
+    padding: 10px 5px;
+    border: 1px dashed black;
+    border-bottom-color: red;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 10px auto;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+}
+
+div {
+    background: yellow;
+    box-shadow: 0 0 10px 2px #000;
 }
