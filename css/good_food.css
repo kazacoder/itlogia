@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url("../images/goodfood/bg.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    padding: 50px 0 47px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

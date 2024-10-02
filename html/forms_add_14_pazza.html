@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+</head>
+<body>
+<hr>
+<h1 style="color: green">Заказ пиццы</h1>
+<h1><font color="blue">Заказ пиццы</font></h1>
+<hr>
+
+<form action="https://webhook.site/e2d6901b-7120-4044-9751-3a893e5acb93" method="post">
+    <div>
+        <label>
+            Имя
+            <input type="text" name="firstname" required>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            Фамилия
+            <input type="text" name="lastname" required>
+        </label>
+    </div>
+    <div>
+        <label>
+            Выберете пиццу
+            <select name="pizza" id="pizza" required>
+                <option value="margo">Маргарита</option>
+                <option value="pep">Пепперони</option>
+                <option value="veg" selected>Вегетарианская</option>
+                <option value="4cheese">4 сыра</option>
+            </select>
+        </label>
+    </div>
+    <br>
+    К пицце добавить:
+    <label>
+        <input type="checkbox" name="add[]" value="souse">
+        Соус
+    </label>
+    <label>
+        <input type="checkbox" name="add[]" value="drink">
+        Напиток
+    </label>
+    <label>
+        <input type="checkbox" name="add[]" value="dessert">
+        Десерт
+    </label>
+    <br>
+    <br>
+    <div>
+        Дополнительно
+        <br>
+        <label>
+            <textarea name="addon" id="" cols="30" rows="10"></textarea>
+        </label>
+    </div>
+    <br>
+    <button type="submit">Отправить</button>
+</form>
+<p><a href="../index.html">Home</a></p>
+
+</body>
+</html>
