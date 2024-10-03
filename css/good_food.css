@@ -17,3 +17,107 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.menu {
+    display: inline-block;
+    margin-left: 208px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 104px;
+}
+
+.menu-item a {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.cafe {
+    padding: 262px 0 150px 0;
+}
+
+.cafe-title {
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.922);
+    font-weight: bold;
+    line-height: 1.2;
+    text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
+    max-width: 468px;
+}
+
+.cafe-actions {
+    margin-top: 45px;
+}
+
+.button {
+    width: 228px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+.button.button-greed-full {
+    background-color: #2f863c;
+    border: 1px solid #2f863c;
+    margin-right: 30px;
+}
+
+.button.button-white-transparent {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.right-food {
+    background: #181717 url("../images/goodfood/background_objects.png") center;
+    background-size: cover;
+    padding: 158px 0 160px 0;
+}
+
+.right-food-container {
+    width: 667px;
+    background: white;
+    padding: 37px 37px 23px 37px;
+    margin: 0 auto;
+}
+
+.right-food-title {
+    font-size: 36px;
+    color: rgb(204, 153, 0);
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+.right-food-text {
+    font-size: 16px;
+    color: rgb(76, 76, 76);
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 434px;
+    margin: 0 auto;
+}
+
+.right-food-image {
+    margin-top: 47px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #10110f;
+    padding: 66px 0 75px 0;
+}
+
+.rights {
+    font-size: 16px;
+    color: rgb(188, 188, 188);
+    line-height: 1.2;
+    margin-left: 762px;
+}
