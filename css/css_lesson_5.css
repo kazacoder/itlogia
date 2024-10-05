@@ -1,0 +1,71 @@
+.div-string {
+    border: 1px solid red;
+    display: inline;
+    margin-top: 100px;              /* игнорируется из-за display: inline;*/
+    border-bottom: 100px;           /* игнорируется из-за display: inline;*/
+    margin-left: 100px;             /* применяется */
+    margin-right: 100px;            /* применяется */
+}
+
+.span-block {
+    border: 1px solid blue;
+    display: block;
+}
+
+.div-around-span {
+    border: 1px solid green;
+    width: 100px;
+}
+
+span {
+    border: 1px solid red;
+    vertical-align: middle;
+}
+.span-in-div {
+
+    border: 1px solid blueviolet;
+    white-space: nowrap;            /* не переносить текст */
+
+}
+
+.span-vertical-align {
+    font-size: 50px;
+}
+
+.container {
+    text-align: center;
+}
+.div-inline-block {
+    display: inline-block;
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;     /* размер вместе с рамкой и padding*/
+    margin-right: -4px;         /* убрать отступ между блоками */
+
+}
+
+
+.div-inline-block-second {
+    display: inline-block;
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;     /* размер вместе с рамкой и padding*/
+    margin: 20px;
+
+}
+
+.block-image {
+    background: green;
+    height: 100px;
+    width: 100%;
+}
+
+.div-inline-block-second.invisible {
+    visibility: hidden;         /* невидимый блок, занимает место */
+}
+
+.hidden-content {
+    display: none;
+}
