@@ -1,0 +1,94 @@
+.my-button {
+    margin: 10px;
+    padding: 10px;
+    background: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.my-class:hover {
+    background: black;
+}
+
+.div {
+    width: 600px;
+    background: yellow;
+
+}
+
+div:hover p {
+    color: green;
+}
+
+input:focus {
+    background: green;
+    outline: none;
+}
+
+a:active {
+    color: green;
+}
+a:visited {
+    color: black;
+}
+
+
+a:link {
+    color: red;
+}
+
+.container .item {
+    margin-left: 10px;
+}
+.container .item:first-child {
+    margin-left: 0;
+}
+
+.container .item:last-child {
+    margin-left: 0;
+}
+
+
+
+.container .item:nth-child(3) {
+    border-bottom: 1px solid black;
+}
+
+.container1 .item1:not(:first-child) {
+    border: 1px solid black;
+}
+
+.container2 .item2:not(a) {
+    border: 1px solid black;
+}
+
+.container3 {
+    border: 10px solid black;
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.container3::before {
+    content: " ";
+    display:  block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    margin-left: -20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: " ";
+    display:  inline-block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    margin-right: 10px;
+}
