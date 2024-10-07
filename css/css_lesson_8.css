@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Freakomix;
+    src: url('../fonts/freakomixbyavdo.ttf');
+}
+
+@font-face {
+    font-family: SicretMonoPorsonal;
+    src: url('../fonts/Sicretmonopersonal.ttf');
+}
+
+@font-face {
+    font-family: SicretMonoPorsonal;
+    src: url('../fonts/SicretmonopersonalBold.ttf');
+    font-weight: bold;
+}
+
+
+
+
+p {
+    font-family: 'SicretMonoPorsonal', sans-serif;
+}
+
+
+div {
+    font-family: 'SicretMonoPorsonal', sans-serif;
+    font-weight: bold;
+}
+
+i.fa-apple {
+    color: red;
+}
+
+.button {
+    padding: 10px 30px;
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    font-size: 24px;
+}
+
+svg {
+    max-width: 200px;
+    fill: #2f863c;
+}
+
+
+svg:hover path:first-child, svg:hover path:nth-child(2) {
+    fill: orange;
+}
+
