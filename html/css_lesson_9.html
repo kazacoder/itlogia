@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок</title>
+    <link rel="stylesheet" href="../css/css_lesson_9.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="block red-bg first"></div>
+    <div class="block green-bg second"></div>
+    <div class="block blue-bg"></div>
+
+</div>
+
+<div class="container2">
+    <button onclick="showPopup('popup')">
+        Открыть Popup
+    </button>
+    <div class="container3">
+        <div class="container4">
+            <div class="block2 red-bg first"></div>
+            <div class="block2 green-bg second"></div>
+            <div class="block2 blue-bg"></div>
+
+        </div>
+    </div>
+</div>
+<div class="container2">
+    <div class="container3">
+        <div class="container4">
+            <div class="block2 red-bg first sticky"></div>
+            <div class="block2 green-bg second"></div>
+            <div class="block2 blue-bg"></div>
+
+        </div>
+    </div>
+</div>
+<div class="container2">
+    <div class="container3">
+        <div class="container4">
+            <div class="block2 red-bg first"></div>
+            <div class="block2 green-bg second"></div>
+            <div class="block2 blue-bg"></div>
+
+        </div>
+    </div>
+</div>
+<div class="container2">
+    <div class="container3">
+        <div class="container4">
+            <div class="block2 red-bg first"></div>
+            <div class="block2 green-bg second"></div>
+            <div class="block2 blue-bg"></div>
+
+        </div>
+    </div>
+</div>
+<div class="container2">
+    <div class="container3">
+        <div class="container4">
+            <div class="block2 red-bg first"></div>
+            <div class="block2 green-bg second"></div>
+            <div class="block2 blue-bg"></div>
+
+        </div>
+    </div>
+</div>
+
+<div class="popup-container" id="popup">
+    <div class="popup">
+        Текст в попапе
+        <button onclick="hidePopup('popup')">X</button>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+    function showPopup (id) {
+        document.getElementById(id).style.display = 'block'
+    }
+
+    function hidePopup (id) {
+        document.getElementById(id).style.display = 'none'
+    }
+</script>
+
+</html>

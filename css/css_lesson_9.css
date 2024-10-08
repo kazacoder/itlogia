@@ -1,0 +1,111 @@
+.container {
+    background-color: gray;
+    padding: 30px;
+    margin: 10px;
+    display: none;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    /*display: inline-block;*/
+}
+
+.block.red-bg {
+    background-color: red;
+}
+
+.block.green-bg {
+    background-color: green;
+}
+
+.block.blue-bg {
+    background-color: blue;
+}
+
+.block.first {
+    z-index: 2;
+    position: relative;
+    opacity: .5;
+}
+
+.block.second {
+    position: relative;
+    /*left: 10px;*/
+    top: -80px;
+    z-index: 1;
+}
+
+.container2 {
+    background-color: gray;
+    padding: 30px;
+    margin: 10px;
+    position: relative;
+}
+.container3 {
+    background-color: yellow;
+    padding: 30px;
+    position: relative;
+}
+.container4 {
+    background-color: black;
+    padding: 30px;
+    margin: 10px;
+    position: relative;
+}
+
+.block2 {
+    width: 100px;
+    height: 100px;
+    /*display: inline-block;*/
+}
+
+.block2.red-bg {
+    background-color: red;
+}
+
+.block2.green-bg {
+    background-color: green;
+}
+
+.block2.blue-bg {
+    background-color: blue;
+}
+
+.block2.first {
+
+}
+
+.block2.second {
+
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+}
+
+.block2.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+
+.popup {
+    position: fixed;
+    background-color: white;
+    border: 1px solid black;
+    padding: 50px;
+    top: calc(50% - 60px) ;
+    left: calc(50% - 101px );
+}
