@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float & Flexbox</title>
+    <link rel="stylesheet" href="../css/css_lesson_10.css">
+</head>
+<body>
+<h2 id="float" class="pointer">Float (click me)</h2>
+<div id="floatContent">
+    <h3>Пример 1</h3>
+
+    <div class="block">Текст 1</div>
+    <div class="block left">Текст 2</div>
+    <div class="block">Текст 3</div>
+    <div class="block right">Текст 4</div>
+    <div class="block left clear">Текст 5</div>
+
+
+    <br>
+    <h3>Пример 2</h3>
+
+    <div class="block">Текст 1</div>
+    <div class="block right">Текст 2</div>
+    <div class="block left">Текст 3</div>
+    <div class="block clear">Текст 4</div>
+
+    <h3>Пример 3</h3>
+
+    <div class="block full-block">
+        <div class="square-float"></div>
+        <div class="square-float"></div>
+        <div class="square-float"></div>
+        <div class="square-float"></div>
+    </div>
+    <div class="block right">Текст 2</div>
+    <div class="block left">Текст 3</div>
+    <div class="block clear">Текст 4</div>
+
+    <h3>Пример 4</h3>
+
+    <div class="block full-block first">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <div class="block right">Текст 2</div>
+    <div class="block left">Текст 3</div>
+    <div class="block clear">Текст 4</div>
+</div>
+
+<h2 id="flex" class="pointer">Flex (press me)</h2>
+<a href="https://flexbox.help/" target="_blank">flexbox.help</a>
+<div id="flexContent">
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item second">2</div>
+        <div class="item third">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+
+</div>
+
+<h2 id="popUp" class="pointer">PopUp (press me)</h2>
+<div id="popUpContent">
+    <button onclick="showPopup('popupContainer')">
+        Открыть Popup
+    </button>
+    <div class="popup-container" id="popupContainer">
+        <div class="popup">
+            Текст в попапе
+            <button onclick="hidePopup('popupContainer')">X</button>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script>
+    document.getElementById('float').onclick = function () {
+
+        (function (style) {
+            style.display = style.display === 'block' ? '' : 'block';
+        })(document.getElementById('floatContent').style);
+    }
+
+    document.getElementById('flex').onclick = function () {
+        (function (style) {
+            style.display = style.display === 'none' ? '' : 'none';
+        })(document.getElementById('flexContent').style);
+    }
+
+    document.getElementById('popUp').onclick = function () {
+        (function (style) {
+            style.display = style.display === 'none' ? '' : 'none';
+        })(document.getElementById('popUpContent').style);
+    }
+
+    function showPopup (id) {
+        document.getElementById(id).style.display = 'flex'
+    }
+
+    function hidePopup (id) {
+        document.getElementById(id).style.display = 'none'
+    }
+
+</script>
+
+</html>
