@@ -10,14 +10,22 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    /*transition-property: all;*/
+    /*transition-duration: 500ms;*/
+    /*transition-timing-function: ease-in-out;*/
+    /*transition-delay: 300ms;*/
+
+    transition: all 500ms ease;
 
 }
 
 button:hover {
     /*transform: translate(20px, 20px);*/
-    /*transform: scale(0.7);*/
+    /*transform: scale(1.7);*/
     /*transform: rotate(-90deg);*/
-    transform: skew(10deg);
+    /*transform: skew(10deg);*/
+    background: orange;
+    padding: 5px 35px;
 }
 
 
@@ -29,3 +37,34 @@ button:hover {
 }
 
 
+.circle {
+    background: green;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    /*animation-name: circle-animation;*/
+    /*animation-duration: 1s;*/
+    /*animation-timing-function: linear;*/
+    /*animation-delay: .5s;*/
+    /*animation-fill-mode: both;*/
+    /*animation-direction: reverse;*/
+    /*animation-iteration-count: infinite;*/
+    animation: circle-animation 1s infinite linear;
+}
+
+@keyframes circle-animation {
+    from {
+        transform: scale(.5);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.circle:hover {
+    animation-play-state: paused;
+}
