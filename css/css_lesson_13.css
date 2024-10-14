@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*padding: 10px;*/
+    box-sizing: border-box;
+    background-color: gray;
+
+
+}
+
+.block {
+    background: orange;
+    /*padding: 10px;*/
+    display: grid;                                                          /* сделать контейнер гридом */
+    /*grid-template-columns: 200px repeat(3, minmax(200px, 1fr));*/         /* задать количество и ширину колонок */
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));           !* auto-fill - количество элементов - авто, ширина   *!*/
+    /*grid-template-rows: 1fr 6fr;*/
+    /*grid-template-columns: fit-content(500px) repeat(2, 50px);*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr;                    /* именованные столбцы */
+    /*grid-template-rows: repeat(2, 50px);                                     !* задать количество и ширину строк *!*/
+    grid-template-rows: [row1] 50px [row2] 50px;                                     /* задать количество и ширину строк */
+    grid-gap: 10px 50px;                                                     /* расстояние между элементами в строках _ колонках */
+
+    grid-auto-rows: 100px 100px;                                            /* высота для строк не явного грида */
+
+    grid-auto-flow: row;                                                 /* элементы, не помещающиеся в явный грид будут добавляться в колонки */
+
+    grid-auto-columns: 100px;                                               /* ширина для колонок не явного грида */
+
+    /*grid-column-gap: 10px;*/
+    /*grid-row-gap: 50px;*/
+
+
+}
+
+.third-block {
+    /*align-items: end;*/
+    /*justify-items: center;*/
+    position: relative;
+}
+
+.second-container .block {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    background: yellow;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.second {
+    grid-row: row2 / 5;
+    grid-column: col3;
+}
+.fifth {
+    /*grid-row-start: 2;*/
+    /*grid-row-end: 5;*/
+    /*grid-column-start: 1;*/
+    /*grid-column-end: 3;*/
+
+    grid-column: col1 / col3;   /* синтаксический сахар верхних 2х строк */
+
+}
+
+
+.third-container {
+    margin-top: 50px;
+}
+
+.element1 {
+    order: 1;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+.element2 {
+    order: 3;
+}
+.element3 {
+    order: 2;
+    /*justify-self: start;*/
+}
+.element4 {
+    order: 4;
+}
+.element5 {
+    order: 5;
+    /*margin: auto;*/
+}
+.element6 {
+    order: 6;
+}
+
+.small-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.element-small {
+    background: red;
+    margin: 0 10px;
+}

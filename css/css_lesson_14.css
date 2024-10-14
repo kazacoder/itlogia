@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+
+button {
+    background: green;
+    padding: 10px 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+button:hover {
+    /*transform: translate(20px, 20px);*/
+    /*transform: scale(0.7);*/
+    /*transform: rotate(-90deg);*/
+    transform: skew(10deg);
+}
+
+
+.block {
+    background: gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+
