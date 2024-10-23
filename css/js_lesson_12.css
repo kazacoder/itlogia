@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.btn, .input{
+    margin: 15px 0;
+}
+
+.input input {
+    margin: 0;
+    padding: 15px;
+    width: 150px;
+    background: #deffdf;
+    border-radius: 15px;
+    border: 1px solid #5adf5d;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input input:focus {
+    background: white;
+    box-shadow: 0 0 5px #5adf5d;
+}
+
+.btn button {
+    padding: 15px;
+    width: 150px;
+    background: orange;
+    border-radius: 15px;
+    border: 1px solid #9c6809;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.btn button:hover {
+    box-shadow: #9c6809 0 5px 10px;
+
+}
+
+.block {
+    margin: 900px 0;
+}
+
+.btn.btn-yellow-wrap {
+    width: 500px;
+    height: 200px;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
