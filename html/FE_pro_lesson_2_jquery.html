@@ -5,71 +5,107 @@
     <title>JQuery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../lib/jquery/jquery-ui.min.css">
+    <link rel="stylesheet" href="../lib/slick/slick.css">
+    <link rel="stylesheet" href="../lib/slick/slick-theme.css">
+    <style>
+        body {
+            background: #b1eca6;
+        }
+        .ui-state-active {
+            background: green;
+        }
+        .carousel {
+            margin: 100px;
+        }
+    </style>
 </head>
 <body>
+<button class="ui-button ui-widget ui-corner-all" id="hide_all">Hide JQery</button>
+<div id="jquery_content">
+    <div class="container">
+        <h1>Заголовок</h1>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <input type="text" name="name" id="name">
+    </div>
 
-<div class="container">
-    <h1>Заголовок</h1>
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <input type="text" name="name" id="name">
+
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+            <p>
+                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+            </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+            <p>
+                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                suscipit faucibus urna.
+            </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+            <p>
+                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+            </p>
+            <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+            </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+            <p>
+                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                mauris vel est.
+            </p>
+            <p>
+                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos.
+            </p>
+        </div>
+    </div>
+
+    <button class="ui-button ui-widget ui-corner-all" id="show_dialog">A button element</button>
+    <div id="dialog" title="Basic dialog">
+        <p>This is the default dialog which is useful for displaying information. The dialog window can be moved,
+            resized and closed with the 'x' icon.</p>
+    </div>
 </div>
 
 
-<div id="accordion">
-    <h3>Section 1</h3>
-    <div>
-        <p>
-            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-        </p>
-    </div>
-    <h3>Section 2</h3>
-    <div>
-        <p>
-            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-            suscipit faucibus urna.
-        </p>
-    </div>
-    <h3>Section 3</h3>
-    <div>
-        <p>
-            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-        </p>
-        <ul>
-            <li>List item one</li>
-            <li>List item two</li>
-            <li>List item three</li>
-        </ul>
-    </div>
-    <h3>Section 4</h3>
-    <div>
-        <p>
-            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-            mauris vel est.
-        </p>
-        <p>
-            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-        </p>
+<div class="carousel">
+    <div class="single-item">
+        <div>
+            <img src="https://kenwheeler.github.io/slick/img/fonz1.png" alt="image">
+        </div>
+        <div>
+            <img src="https://kenwheeler.github.io/slick/img/fonz2.png" alt="image">
+        </div>
+        <div>
+            <img src="https://kenwheeler.github.io/slick/img/fonz3.png" alt="image">
+        </div>
     </div>
 </div>
-
 
 <script src="../lib/jquery/jquery-3.7.1.min.js"></script>
 <script src="../lib/jquery/jquery-ui.min.js"></script>
 <script src="../scripts/FE_pro_lesson_2_jquery.js"></script>
+<script src="../lib/slick/slick.min.js"></script>
 
 </body>
 </html>
