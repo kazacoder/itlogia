@@ -89,6 +89,16 @@
     top: 0;
 }
 
+
+.block2.sticky_b {
+    position: sticky;
+    bottom: 0;
+        top: 0;
+        height: 50vh;
+        overflow-y: auto;
+
+}
+
 .popup-container {
     display: none;
     position: fixed;
