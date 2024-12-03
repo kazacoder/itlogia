@@ -35,6 +35,7 @@ Promise.all(
     products = response[2];
 
 
+
     processData();
 
 })
@@ -87,6 +88,94 @@ function processData() {
 
     console.log(resultReduce);
 
+
+
+    let samsung = brands.find(item => item.title.toLowerCase() === 'samsung').id
+    if (samsung) {
+
+        let resSamsung = products.filter(item => item.brandId === samsung)
+        console.log(resSamsung);
+    } else {
+        console.log('Not found')
+    }
+
+    let productsFullData = products.map(item => {
+        let brand = brands.find(el => item.brandId === el.id).title
+        let type = types.find(el => item.typeId === el.id).name
+        if (brand) {item.brand = brand}
+        if (brand) {item.type = type}
+        delete item.brandId
+        delete item.typeId
+        return item;
+    })
+    console.log(productsFullData);
+
+    let productsRated = products.map(item => {
+        let allStars = item.reviews.reduce((sum, el) => {
+            return sum + el.stars
+        }, 0)
+        return {title: item.title, rating: +(allStars / item.reviews.length).toFixed(1)};
+    })
+    console.log(productsRated);
+
+    // my way
+    let maxPower = Math.max.apply(null, products.map(item => {
+        let power = parseInt(item.characteristics[0].value[1].value)
+        return power ? power : 0
+    }))
+    let mostPowerfulVacuum = products.find(item => {return item.characteristics[0].value[1].value = maxPower})
+    console.log(mostPowerfulVacuum);
+
+    // lesson way
+    console.log('-------------------')
+    let maxPowerLess = 0
+    let mostPowerfulItem = null
+
+    products.forEach(item => {
+        let commonCharacteristics = item.characteristics.find(cat => {
+            return cat.name.toLowerCase() === 'основные';
+        });
+        if (commonCharacteristics && commonCharacteristics.value)
+        {
+            let power = commonCharacteristics.value.find(el => {
+                return el.name.toLowerCase() === 'мощность'
+            })
+
+            if (power && power.value) {
+                let powerNum = parseInt(power.value)
+                if (!isNaN(powerNum) && powerNum > maxPowerLess) {
+                    maxPowerLess = powerNum;
+                    mostPowerfulItem = item
+                }
+            }
+        }
+
+    })
+    console.log(mostPowerfulItem)
+
+
+    let customer = 'валерий рудерман'
+    resFindClient = products.find(item => {
+        let res =  item.reviews.findIndex(review => {
+            return review.person.toLowerCase() === customer
+        })
+        return res > -1
+    })
+
+    console.log(resFindClient);
+
+
+
+    console.log('-------------------')
+    let newReviews = products.flatMap(item => {
+        return item.reviews
+    }).filter(item => {
+        let dateParts = item.date.split('.')
+        return new Date(`${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`) >= new Date("2022-01-01")
+    })
+
+    console.log(newReviews);
+    console.log(new Date("2022-01-01"));
 
 }
 
